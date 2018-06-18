@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      <title>Profite</title>
+      <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,300i,400,400i,500,500i,700,700i" rel="stylesheet">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <!-- Font Awesome -->
+
+      <!-- Bootstrap core CSS -->
+      <link href="css/bootstrap.min.css" rel="stylesheet">
+      <!-- Material Design Bootstrap -->
+      <link href="css/mdb.min.css" rel="stylesheet">
+      <!-- Your custom styles (optional) -->
+      <link href="css/style.min.css" rel="stylesheet">
+   </head>
+   <body>
+      <!-- Nova -->
+      <header>
+         <div id="flipkart-navbar ">
+            <div class="container">
+               <div class="row row2">
+                  <div class="col-md-3" >
+                     <h2 style="margin:0px ">
+                        <div class="row hidden-mobile">
+                           <div class="hidden-xs col-4  col-sm-2  "><span class="smallnav menu" onclick="openNav()">☰ </div>
+                           <div class="hidden-xs col-4  col-sm-6" >
+                              <div class="logoMobile center-block">    <img src="img/Logo.png" height="30" class="d-inline-block align-center" alt="Profite"></div>
+                           </div>
+                           <div class="hidden-xs col-4  col-sm-4">
+                              <div class="mycart  text-right">
+                                 <a class="cart-button" title="meu Carrinho">
+                                    <svg width="19" height="18" viewBox="0 0 19 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                       <path fill-rule="evenodd" clip-rule="evenodd" d="M5.39704 14.4C4.40761 14.4 3.60706 15.21 3.60706 16.2C3.60706 17.19 4.40761 18 5.39704 18C6.38648 18 7.19602 17.19 7.19602 16.2C7.19602 15.21 6.38648 14.4 5.39704 14.4Z" fill="#011627"/>
+                                       <path fill-rule="evenodd" clip-rule="evenodd" d="M14.3918 14.4C13.4023 14.4 12.6018 15.21 12.6018 16.2C12.6018 17.19 13.4023 18 14.3918 18C15.3812 18 16.1908 17.19 16.1908 16.2C16.1908 15.21 15.3812 14.4 14.3918 14.4Z" fill="#011627"/>
+                                       <path fill-rule="evenodd" clip-rule="evenodd" d="M5.54984 11.475L5.57682 11.367L6.38636 9.89997H13.0875C13.7622 9.89997 14.3558 9.53097 14.6616 8.97297L18.1337 2.66399L16.5686 1.79999H16.5596L15.5701 3.59999L13.0875 8.09998H6.77314L6.65621 7.85698L4.64136 3.59999L3.78684 1.79999L2.94132 0H0V1.79999H1.79897L5.03713 8.63098L3.82282 10.836C3.6789 11.088 3.59795 11.385 3.59795 11.7C3.59795 12.69 4.40749 13.5 5.39692 13.5H16.1908V11.7H5.77471C5.65778 11.7 5.54984 11.601 5.54984 11.475Z" fill="#011627"/>
+                                    </svg>
+                                    <span class="item-number ">1</span>
+                                 </a>
+                              </div>
+                           </div>
+                        </div>
+                     </h2>
+                     <h1 style="margin:0px;"><span class="largenav"><img src="img/Logo.png" height="30" class="d-inline-block align-top" alt="Profite"></span></h1>
+                  </div>
+                  <div class="flipkart-navbar-search smallsearch col-xl-6 col-lg-5 col-md-5 nopadding-left ">
+                     <div class="row">
+                        <div class="col-xl-12 col-lg-6 col-md-12 nopadding-left">
+                           <input class="flipkart-navbar-input  " type="" placeholder="O que está procurando?" name="">
+                           <button class="btn-none" type="button">
+                           <img src="img/seach.jpg" alt="buscar">
+                           </button>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-xl-3 col-lg-3 col-md-4 smartcart">
+                     <div class="row">
+                        <div class="cart largenav  col-sm-5 ">
+                           <a class="cart-button" title="Minha Conta">
+                              <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path fill-rule="evenodd" clip-rule="evenodd" d="M9 0C4.032 0 0 4.032 0 9C0 13.968 4.032 18 9 18C13.968 18 18 13.968 18 9C18 4.032 13.968 0 9 0ZM9 2.70001C10.494 2.70001 11.7 3.90601 11.7 5.40001C11.7 6.89401 10.494 8.10001 9 8.10001C7.506 8.10001 6.3 6.89401 6.3 5.40001C6.3 3.90601 7.506 2.70001 9 2.70001ZM9 15.48C6.75 15.48 4.761 14.328 3.6 12.582C3.627 10.791 7.2 9.81 9 9.81C10.791 9.81 14.373 10.791 14.4 12.582C13.239 14.328 11.25 15.48 9 15.48Z" fill="#011627"/>
+                              <span class="item-cont ">Minha Conta</span>
+                           </a>
+                        </div>
+                        <div class="mycart   col-sm-2 ">
+                           <a class="cart-button" title="meu Carrinho">
+                              <svg width="19" height="18" viewBox="0 0 19 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                 <path fill-rule="evenodd" clip-rule="evenodd" d="M5.39704 14.4C4.40761 14.4 3.60706 15.21 3.60706 16.2C3.60706 17.19 4.40761 18 5.39704 18C6.38648 18 7.19602 17.19 7.19602 16.2C7.19602 15.21 6.38648 14.4 5.39704 14.4Z" fill="#011627"/>
+                                 <path fill-rule="evenodd" clip-rule="evenodd" d="M14.3918 14.4C13.4023 14.4 12.6018 15.21 12.6018 16.2C12.6018 17.19 13.4023 18 14.3918 18C15.3812 18 16.1908 17.19 16.1908 16.2C16.1908 15.21 15.3812 14.4 14.3918 14.4Z" fill="#011627"/>
+                                 <path fill-rule="evenodd" clip-rule="evenodd" d="M5.54984 11.475L5.57682 11.367L6.38636 9.89997H13.0875C13.7622 9.89997 14.3558 9.53097 14.6616 8.97297L18.1337 2.66399L16.5686 1.79999H16.5596L15.5701 3.59999L13.0875 8.09998H6.77314L6.65621 7.85698L4.64136 3.59999L3.78684 1.79999L2.94132 0H0V1.79999H1.79897L5.03713 8.63098L3.82282 10.836C3.6789 11.088 3.59795 11.385 3.59795 11.7C3.59795 12.69 4.40749 13.5 5.39692 13.5H16.1908V11.7H5.77471C5.65778 11.7 5.54984 11.601 5.54984 11.475Z" fill="#011627"/>
+                              </svg>
+                              <span class="item-number ">1</span>
+                           </a>
+                        </div>
+                        <div class="cart largenav col-sm-4 col-xs-0 ">
+                           <ul class="largenav ">
+                              <li class="upper-links">
+                                 <a class="links" href="#" title="Brasil">
+                                    <svg width="25" height="18" viewBox="0 0 78 54" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                       <path fill-rule="evenodd" clip-rule="evenodd" d="M0 2C0 0.895431 0.89543 0 2 0H23.2C24.3046 0 25.2 0.895431 25.2 2V16C25.2 17.1046 24.3046 18 23.2 18H2C0.895431 18 0 17.1046 0 16V2Z" transform="scale(3)" fill="white"/>
+                                       <mask id="mask0" mask-type="alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="76" height="54">
+                                          <path fill-rule="evenodd" clip-rule="evenodd" d="M0 2C0 0.895431 0.89543 0 2 0H23.2C24.3046 0 25.2 0.895431 25.2 2V16C25.2 17.1046 24.3046 18 23.2 18H2C0.895431 18 0 17.1046 0 16V2Z" transform="scale(3)" fill="white"/>
+                                       </mask>
+                                       <g mask="url(#mask0)">
+                                          <path fill-rule="evenodd" clip-rule="evenodd" d="M0 0H25.2V18H0V0Z" transform="scale(3)" fill="#05AB41"/>
+                                          <path fill-rule="evenodd" clip-rule="evenodd" d="M0.865011 7.15971C0.459012 6.89701 0.459013 6.30299 0.865012 6.04029L9.83783 0.234344C10.0582 0.0917393 10.3418 0.0917394 10.5622 0.234344L19.535 6.04029C19.941 6.30299 19.941 6.89701 19.535 7.15971L10.5622 12.9657C10.3418 13.1083 10.0582 13.1083 9.83783 12.9657L0.865011 7.15971Z" transform="translate(7.19998 7.20007) scale(3)" fill="#FDD216"/>
+                                          <path fill-rule="evenodd" clip-rule="evenodd" d="M4.2 8.4C6.5196 8.4 8.4 6.5196 8.4 4.2C8.4 1.8804 6.5196 0 4.2 0C1.8804 0 0 1.8804 0 4.2C0 6.5196 1.8804 8.4 4.2 8.4Z" transform="translate(25.2 14.4) scale(3)" fill="#053087"/>
+                                          <mask id="mask1" mask-type="alpha" maskUnits="userSpaceOnUse" x="25" y="14" width="26" height="26">
+                                             <path fill-rule="evenodd" clip-rule="evenodd" d="M4.2 8.4C6.5196 8.4 8.4 6.5196 8.4 4.2C8.4 1.8804 6.5196 0 4.2 0C1.8804 0 0 1.8804 0 4.2C0 6.5196 1.8804 8.4 4.2 8.4Z" transform="translate(25.2 14.4) scale(3)" fill="white"/>
+                                          </mask>
+                                          <g mask="url(#mask1)">
+                                             <path d="M0 0.352444C0.6 -0.247556 2.76914 0.0331081 4.8 0.352444C6.83086 0.67178 9.00731 1.55975 9.6 2.15244" transform="translate(23.8164 22.6553) scale(3) rotate(6)" stroke="white" stroke-width="1.33333" stroke-linecap="square"/>
+                                          </g>
+                                       </g>
+                                    </svg>
+                                 </a>
+                              </li>
+                              <li class="upper-links">
+                                 <a class="links" href="#" title="Espanha">
+                                    <svg width="25" height="18" viewBox="0 0 78 54" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                       <path fill-rule="evenodd" clip-rule="evenodd" d="M0 2C0 0.895431 0.89543 0 2 0H23.2C24.3046 0 25.2 0.895431 25.2 2V16C25.2 17.1046 24.3046 18 23.2 18H2C0.895431 18 0 17.1046 0 16V2Z" transform="translate(1.80002) scale(3)" fill="white"/>
+                                       <mask id="mask0" mask-type="alpha" maskUnits="userSpaceOnUse" x="1" y="0" width="77" height="54">
+                                          <path fill-rule="evenodd" clip-rule="evenodd" d="M0 2C0 0.895431 0.89543 0 2 0H23.2C24.3046 0 25.2 0.895431 25.2 2V16C25.2 17.1046 24.3046 18 23.2 18H2C0.895431 18 0 17.1046 0 16V2Z" transform="translate(1.80002) scale(3)" fill="white"/>
+                                       </mask>
+                                       <g mask="url(#mask0)">
+                                          <path fill-rule="evenodd" clip-rule="evenodd" d="M0 4.8H25.2V0H0V4.8Z" transform="translate(1.80002) scale(3)" fill="#DD172C"/>
+                                          <path fill-rule="evenodd" clip-rule="evenodd" d="M0 4.8H25.2V0H0V4.8Z" transform="translate(1.80002 39.6) scale(3)" fill="#DD172C"/>
+                                          <path fill-rule="evenodd" clip-rule="evenodd" d="M0 8.4H25.2V0H0V8.4Z" transform="translate(1.80002 14.4) scale(3)" fill="#FFD133"/>
+                                          <path fill-rule="evenodd" clip-rule="evenodd" d="M0 1.2H1.2V1.8H0V1.2Z" transform="translate(21.6 21.6) scale(3)" fill="#FFEDB1"/>
+                                          <path d="M0.392351 0.694349C0.376156 0.500009 0.52952 0.333333 0.724533 0.333333H2.27547C2.47048 0.333333 2.62384 0.500009 2.60765 0.694349L2.46747 2.37646C2.42554 2.87963 2.00492 3.26667 1.5 3.26667C0.995084 3.26667 0.574458 2.87963 0.532527 2.37646L0.392351 0.694349Z" transform="translate(17.1 23.4) scale(3)" stroke="#A41517" stroke-width="0.666667"/>
+                                          <path fill-rule="evenodd" clip-rule="evenodd" d="M0 0H2.4V0.6H1.8L1.2 1.8L0.6 0.6H0V0Z" transform="translate(18 27) scale(3)" fill="#A41517"/>
+                                          <path fill-rule="evenodd" clip-rule="evenodd" d="M0 0.6C0 0.268629 0.268629 0 0.6 0C0.931371 0 1.2 0.268629 1.2 0.6V3.6C1.2 3.93137 0.931371 4.2 0.6 4.2C0.268629 4.2 0 3.93137 0 3.6V0.6Z" transform="translate(12.6 21.6) scale(3)" fill="#A41517"/>
+                                          <path fill-rule="evenodd" clip-rule="evenodd" d="M0 0.6C0 0.268629 0.268629 0 0.6 0C0.931371 0 1.2 0.268629 1.2 0.6V3.6C1.2 3.93137 0.931371 4.2 0.6 4.2C0.268629 4.2 0 3.93137 0 3.6V0.6Z" transform="translate(27 21.6) scale(3)" fill="#A41517"/>
+                                          <path fill-rule="evenodd" clip-rule="evenodd" d="M0 0.96C0 0.429807 0.429807 0 0.96 0H1.44C1.97019 0 2.4 0.429807 2.4 0.96C2.4 1.09255 2.29255 1.2 2.16 1.2H0.24C0.107452 1.2 0 1.09255 0 0.96Z" transform="translate(18 18) scale(3)" fill="#A41517"/>
+                                       </g>
+                                    </svg>
+                                 </a>
+                              </li>
+                              <li class="upper-links">
+                                 <a class="links" href="#" title="Inglaterra">
+                                    <svg width="25" height="18" viewBox="0 0 78 54" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                       <path fill-rule="evenodd" clip-rule="evenodd" d="M0 2C0 0.895431 0.89543 0 2 0H23.2C24.3046 0 25.2 0.895431 25.2 2V16C25.2 17.1046 24.3046 18 23.2 18H2C0.895431 18 0 17.1046 0 16V2Z" transform="scale(3)" fill="white"/>
+                                       <mask id="mask0" mask-type="alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="76" height="54">
+                                          <path fill-rule="evenodd" clip-rule="evenodd" d="M0 2C0 0.895431 0.89543 0 2 0H23.2C24.3046 0 25.2 0.895431 25.2 2V16C25.2 17.1046 24.3046 18 23.2 18H2C0.895431 18 0 17.1046 0 16V2Z" transform="scale(3)" fill="white"/>
+                                       </mask>
+                                       <g mask="url(#mask0)">
+                                          <path fill-rule="evenodd" clip-rule="evenodd" d="M0 0H25.2V18H0V0Z" transform="scale(3)" fill="#0A17A7"/>
+                                          <path fill-rule="evenodd" clip-rule="evenodd" d="M8.50247 13.7249L0 19.4599L1.34206 21.4496L12.0963 14.1958V20.9249H18.0963V14.1959L28.8505 21.4496L30.1926 19.46L21.69 13.7249H27.6963V7.72491H21.6897L30.1926 1.98969L28.8505 0L18.0963 7.25378V0.524902H12.0963V7.25385L1.34206 6.10352e-05L0 1.98975L8.50273 7.72491H2.49628V13.7249H8.50247Z" transform="translate(-7.48883 -5.17456) scale(3)" fill="white"/>
+                                          <path d="M0 7.49897L11.3988 0" transform="translate(50.4035 -5.39996) scale(3)" stroke="#DB1F35" stroke-width="0.666667" stroke-linecap="round"/>
+                                          <path d="M0 6.88755L10.2185 0" transform="translate(54.0345 57.646) scale(3 -3)" stroke="#DB1F35" stroke-width="0.666667" stroke-linecap="round"/>
+                                          <path d="M10.6587 7.1833L0 0" transform="translate(-10.3612 -4.5119) scale(3)" stroke="#DB1F35" stroke-width="0.666667" stroke-linecap="round"/>
+                                          <path d="M11.8148 7.83501L0 0" transform="translate(-10.3612 60.238) scale(3 -3)" stroke="#DB1F35" stroke-width="0.666667" stroke-linecap="round"/>
+                                          <path fill-rule="evenodd" clip-rule="evenodd" d="M0 10.8H10.8V18H14.4V10.8H25.2V7.2H14.4V0H10.8V7.2H0V10.8Z" transform="scale(3)" fill="#E6273E"/>
+                                       </g>
+                                    </svg>
+                                 </a>
+                              </li>
+                              <a class="links" href="http://clashhacks.in/">
+                                 <svg class="" width="16px" height="12px" style="overflow: visible;">
+                                    <path d="M8.037 17.546c1.487 0 2.417-.93 2.417-2.417H5.62c0 1.486.93 2.415 2.417 2.415m5.315-6.463v-2.97h-.005c-.044-3.266-1.67-5.46-4.337-5.98v-.81C9.01.622 8.436.05 7.735.05 7.033.05 6.46.624 6.46 1.325v.808c-2.667.52-4.294 2.716-4.338 5.98h-.005v2.972l-1.843 1.42v1.376h14.92v-1.375l-1.842-1.42z" fill="#fff"></path>
+                                 </svg>
+                              </a>
+                              </li>
+                           </ul>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         </div>
+      </header>
+      <div id="mySidenav" class="sidenav">
+         <div class="container" style=" padding-top: 10px;">
+            <span class="sidenav-heading">Menu</span>
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+         </div>
+         <a class="cart-button" title="Minha Conta">
+            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M9 0C4.032 0 0 4.032 0 9C0 13.968 4.032 18 9 18C13.968 18 18 13.968 18 9C18 4.032 13.968 0 9 0ZM9 2.70001C10.494 2.70001 11.7 3.90601 11.7 5.40001C11.7 6.89401 10.494 8.10001 9 8.10001C7.506 8.10001 6.3 6.89401 6.3 5.40001C6.3 3.90601 7.506 2.70001 9 2.70001ZM9 15.48C6.75 15.48 4.761 14.328 3.6 12.582C3.627 10.791 7.2 9.81 9 9.81C10.791 9.81 14.373 10.791 14.4 12.582C13.239 14.328 11.25 15.48 9 15.48Z" fill="#011627"/>
+            <span class="item-cont ">Minha Conta</span>
+         </a>
+         <a href="#">
+            <svg width="25" height="18" viewBox="0 0 78 54" fill="none" xmlns="http://www.w3.org/2000/svg">
+               <path fill-rule="evenodd" clip-rule="evenodd" d="M0 2C0 0.895431 0.89543 0 2 0H23.2C24.3046 0 25.2 0.895431 25.2 2V16C25.2 17.1046 24.3046 18 23.2 18H2C0.895431 18 0 17.1046 0 16V2Z" transform="scale(3)" fill="white"/>
+               <mask id="mask0" mask-type="alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="76" height="54">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M0 2C0 0.895431 0.89543 0 2 0H23.2C24.3046 0 25.2 0.895431 25.2 2V16C25.2 17.1046 24.3046 18 23.2 18H2C0.895431 18 0 17.1046 0 16V2Z" transform="scale(3)" fill="white"/>
+               </mask>
+               <g mask="url(#mask0)">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M0 0H25.2V18H0V0Z" transform="scale(3)" fill="#05AB41"/>
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M0.865011 7.15971C0.459012 6.89701 0.459013 6.30299 0.865012 6.04029L9.83783 0.234344C10.0582 0.0917393 10.3418 0.0917394 10.5622 0.234344L19.535 6.04029C19.941 6.30299 19.941 6.89701 19.535 7.15971L10.5622 12.9657C10.3418 13.1083 10.0582 13.1083 9.83783 12.9657L0.865011 7.15971Z" transform="translate(7.19998 7.20007) scale(3)" fill="#FDD216"/>
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M4.2 8.4C6.5196 8.4 8.4 6.5196 8.4 4.2C8.4 1.8804 6.5196 0 4.2 0C1.8804 0 0 1.8804 0 4.2C0 6.5196 1.8804 8.4 4.2 8.4Z" transform="translate(25.2 14.4) scale(3)" fill="#053087"/>
+                  <mask id="mask1" mask-type="alpha" maskUnits="userSpaceOnUse" x="25" y="14" width="26" height="26">
+                     <path fill-rule="evenodd" clip-rule="evenodd" d="M4.2 8.4C6.5196 8.4 8.4 6.5196 8.4 4.2C8.4 1.8804 6.5196 0 4.2 0C1.8804 0 0 1.8804 0 4.2C0 6.5196 1.8804 8.4 4.2 8.4Z" transform="translate(25.2 14.4) scale(3)" fill="white"/>
+                  </mask>
+                  <g mask="url(#mask1)">
+                     <path d="M0 0.352444C0.6 -0.247556 2.76914 0.0331081 4.8 0.352444C6.83086 0.67178 9.00731 1.55975 9.6 2.15244" transform="translate(23.8164 22.6553) scale(3) rotate(6)" stroke="white" stroke-width="1.33333" stroke-linecap="square"/>
+                  </g>
+               </g>
+            </svg>
+         </a>
+         <a href="#">
+            <svg width="25" height="18" viewBox="0 0 78 54" fill="none" xmlns="http://www.w3.org/2000/svg">
+               <path fill-rule="evenodd" clip-rule="evenodd" d="M0 2C0 0.895431 0.89543 0 2 0H23.2C24.3046 0 25.2 0.895431 25.2 2V16C25.2 17.1046 24.3046 18 23.2 18H2C0.895431 18 0 17.1046 0 16V2Z" transform="translate(1.80002) scale(3)" fill="white"/>
+               <mask id="mask0" mask-type="alpha" maskUnits="userSpaceOnUse" x="1" y="0" width="77" height="54">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M0 2C0 0.895431 0.89543 0 2 0H23.2C24.3046 0 25.2 0.895431 25.2 2V16C25.2 17.1046 24.3046 18 23.2 18H2C0.895431 18 0 17.1046 0 16V2Z" transform="translate(1.80002) scale(3)" fill="white"/>
+               </mask>
+               <g mask="url(#mask0)">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M0 4.8H25.2V0H0V4.8Z" transform="translate(1.80002) scale(3)" fill="#DD172C"/>
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M0 4.8H25.2V0H0V4.8Z" transform="translate(1.80002 39.6) scale(3)" fill="#DD172C"/>
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M0 8.4H25.2V0H0V8.4Z" transform="translate(1.80002 14.4) scale(3)" fill="#FFD133"/>
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M0 1.2H1.2V1.8H0V1.2Z" transform="translate(21.6 21.6) scale(3)" fill="#FFEDB1"/>
+                  <path d="M0.392351 0.694349C0.376156 0.500009 0.52952 0.333333 0.724533 0.333333H2.27547C2.47048 0.333333 2.62384 0.500009 2.60765 0.694349L2.46747 2.37646C2.42554 2.87963 2.00492 3.26667 1.5 3.26667C0.995084 3.26667 0.574458 2.87963 0.532527 2.37646L0.392351 0.694349Z" transform="translate(17.1 23.4) scale(3)" stroke="#A41517" stroke-width="0.666667"/>
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M0 0H2.4V0.6H1.8L1.2 1.8L0.6 0.6H0V0Z" transform="translate(18 27) scale(3)" fill="#A41517"/>
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M0 0.6C0 0.268629 0.268629 0 0.6 0C0.931371 0 1.2 0.268629 1.2 0.6V3.6C1.2 3.93137 0.931371 4.2 0.6 4.2C0.268629 4.2 0 3.93137 0 3.6V0.6Z" transform="translate(12.6 21.6) scale(3)" fill="#A41517"/>
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M0 0.6C0 0.268629 0.268629 0 0.6 0C0.931371 0 1.2 0.268629 1.2 0.6V3.6C1.2 3.93137 0.931371 4.2 0.6 4.2C0.268629 4.2 0 3.93137 0 3.6V0.6Z" transform="translate(27 21.6) scale(3)" fill="#A41517"/>
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M0 0.96C0 0.429807 0.429807 0 0.96 0H1.44C1.97019 0 2.4 0.429807 2.4 0.96C2.4 1.09255 2.29255 1.2 2.16 1.2H0.24C0.107452 1.2 0 1.09255 0 0.96Z" transform="translate(18 18) scale(3)" fill="#A41517"/>
+               </g>
+            </svg>
+         </a>
+         <a href="#">
+            <svg width="25" height="18" viewBox="0 0 78 54" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M0 2C0 0.895431 0.89543 0 2 0H23.2C24.3046 0 25.2 0.895431 25.2 2V16C25.2 17.1046 24.3046 18 23.2 18H2C0.895431 18 0 17.1046 0 16V2Z" transform="scale(3)" fill="white"/>
+            <mask id="mask0" mask-type="alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="76" height="54">
+               <path fill-rule="evenodd" clip-rule="evenodd" d="M0 2C0 0.895431 0.89543 0 2 0H23.2C24.3046 0 25.2 0.895431 25.2 2V16C25.2 17.1046 24.3046 18 23.2 18H2C0.895431 18 0 17.1046 0 16V2Z" transform="scale(3)" fill="white"/>
+            </mask>
+            <g mask="url(#mask0)">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M0 0H25.2V18H0V0Z" transform="scale(3)" fill="#0A17A7"/>
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M8.50247 13.7249L0 19.4599L1.34206 21.4496L12.0963 14.1958V20.9249H18.0963V14.1959L28.8505 21.4496L30.1926 19.46L21.69 13.7249H27.6963V7.72491H21.6897L30.1926 1.98969L28.8505 0L18.0963 7.25378V0.524902H12.0963V7.25385L1.34206 6.10352e-05L0 1.98975L8.50273 7.72491H2.49628V13.7249H8.50247Z" transform="translate(-7.48883 -5.17456) scale(3)" fill="white"/>
+            <path d="M0 7.49897L11.3988 0" transform="translate(50.4035 -5.39996) scale(3)" stroke="#DB1F35" stroke-width="0.666667" stroke-linecap="round"/>
+            <path d="M0 6.88755L10.2185 0" transform="translate(54.0345 57.646) scale(3 -3)" stroke="#DB1F35" stroke-width="0.666667" stroke-linecap="round"/>
+            <path d="M10.6587 7.1833L0 0" transform="translate(-10.3612 -4.5119) scale(3)" stroke="#DB1F35" stroke-width="0.666667" stroke-linecap="round"/>
+            <path d="M11.8148 7.83501L0 0" transform="translate(-10.3612 60.238) scale(3 -3)" stroke="#DB1F35" stroke-width="0.666667" stroke-linecap="round"/>
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M0 10.8H10.8V18H14.4V10.8H25.2V7.2H14.4V0H10.8V7.2H0V10.8Z" transform="scale(3)" fill="#E6273E"/>
+         </a>
+      </div>
+      <!--/.Navbar-->
+      <section class="top_slider">
+         <div class="slide">
+            <img src="img/banner02.jpg">
+            <h2>Nossa Especialidade?
+               experiência do comprar.
+            </h2>
+         </div>
+         <div class="slide">
+            <img src="img/banner01.jpg">
+         </div>
+         <div class="slide">
+            <img src="img/banner02.jpg">
+            <h2>Nossa Especialidade?
+               experiência do comprar.
+            </h2>
+         </div>
+         <div class="slide">
+            <img src="img/banner01.jpg">
+         </div>
+      </section>
+      <article class="produtos">
+         <div class="container">
+            <div class="row">
+               <div class="col-sm-12">
+                  <h4>Produtos</h4>
+               </div>
+            </div>
+            <div class="row">
+               <div class="col-sm-12">
+                  <section class="regular slider">
+                     <div class="containerProduto">
+                        <!--div class="flagProd">
+                           </div-->
+                        <div class="fotoProduto">
+                           <img src="img/imgProg.png">
+                        </div>
+                        <div class="nameProd">
+                           <h3>TÊNIS COURO PUMA R698 Q4 V2</h3>
+                        </div>
+                        <div class="qualificacaoProd">
+                           <svg width="70" height="11" viewBox="0 0 70 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path fill-rule="evenodd" clip-rule="evenodd" d="M11.3896 3.81053L7.29501 3.48421L5.69478 0L4.09454 3.48947L0 3.81053L3.10935 6.3L2.17541 10L5.69478 8.03684L9.21415 10L8.2859 6.3L11.3896 3.81053ZM5.69479 7.05263L3.55355 8.24737L4.12303 5.99474L2.23236 4.47895L4.72667 4.27895L5.69479 2.15789L6.66859 4.28421L9.1629 4.48421L7.27224 6L7.84172 8.25263L5.69479 7.05263Z" transform="translate(14.6071 0.648972)" fill="#FF9F1C"/>
+                              <path fill-rule="evenodd" clip-rule="evenodd" d="M11.3896 3.81053L7.29501 3.48421L5.69478 0L4.09454 3.48947L0 3.81053L3.10935 6.3L2.17541 10L5.69478 8.03684L9.21415 10L8.2859 6.3L11.3896 3.81053ZM5.69477 7.05263L3.55353 8.24737L4.12301 5.99474L2.23234 4.47895L4.72666 4.27895L5.69477 2.1579L6.66857 4.28421L9.16289 4.48421L7.27222 6L7.8417 8.25264L5.69477 7.05263Z" transform="translate(29.2142 0.648972)" fill="#FF9F1C"/>
+                              <path fill-rule="evenodd" clip-rule="evenodd" d="M11.3896 3.81053L7.29501 3.48421L5.69478 0L4.09454 3.48947L0 3.81053L3.10935 6.3L2.17541 10L5.69478 8.03684L9.21415 10L8.2859 6.3L11.3896 3.81053ZM5.69477 7.05263L3.55353 8.24737L4.12301 5.99474L2.23234 4.47895L4.72666 4.27895L5.69477 2.1579L6.66857 4.28421L9.16289 4.48421L7.27222 6L7.8417 8.25264L5.69477 7.05263Z" transform="translate(43.0526 0.648972)" fill="#FF9F1C"/>
+                              <path fill-rule="evenodd" clip-rule="evenodd" d="M11.3896 3.81053L7.29501 3.48421L5.69478 0L4.09454 3.48947L0 3.81053L3.10935 6.3L2.17541 10L5.69478 8.03684L9.21415 10L8.2859 6.3L11.3896 3.81053ZM5.69477 7.05263L3.55353 8.24737L4.12301 5.99474L2.23234 4.47895L4.72666 4.27895L5.69477 2.1579L6.66857 4.28421L9.16289 4.48421L7.27222 6L7.8417 8.25264L5.69477 7.05263Z" transform="translate(57.6597 0.648972)" fill="#FF9F1C"/>
+                              <path fill-rule="evenodd" clip-rule="evenodd" d="M5.69478 8.03684L9.21415 10L8.28021 6.3L11.3896 3.81053L7.29501 3.48947L5.69478 0L4.09454 3.48947L0 3.81053L3.10935 6.3L2.17541 10L5.69478 8.03684Z" transform="translate(0 0.648987)" fill="#FF9F1C"/>
+                           </svg>
+                        </div>
+                        <div class="preco">
+                           <span class="preco-de"> de R$ 129,58</span> 
+                           <span class="preco-por"> por R$ 399,00</span>
+                           <span class="preco-parcelado">ou 3x de R$ 133,00,79</span>
+                        </div>
+                        <div class="bt-comprar">
+                           <a href="#"><span class="icon-btn-cart"></span> Comprar</a>
+                        </div>
+                     </div>
+                     <div>
+                        <div class="containerProduto">
+                           <div class="flagProd">
+                           </div>
+                           <div class="fotoProduto">
+                              <img src="img/imgProg.png">
+                           </div>
+                           <div class="nameProd">
+                              <h3>TÊNIS COURO PUMA R698 Q4 V2</h3>
+                           </div>
+                           <div class="qualificacaoProd">
+                              <svg width="70" height="11" viewBox="0 0 70 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                 <path fill-rule="evenodd" clip-rule="evenodd" d="M11.3896 3.81053L7.29501 3.48421L5.69478 0L4.09454 3.48947L0 3.81053L3.10935 6.3L2.17541 10L5.69478 8.03684L9.21415 10L8.2859 6.3L11.3896 3.81053ZM5.69479 7.05263L3.55355 8.24737L4.12303 5.99474L2.23236 4.47895L4.72667 4.27895L5.69479 2.15789L6.66859 4.28421L9.1629 4.48421L7.27224 6L7.84172 8.25263L5.69479 7.05263Z" transform="translate(14.6071 0.648972)" fill="#FF9F1C"/>
+                                 <path fill-rule="evenodd" clip-rule="evenodd" d="M11.3896 3.81053L7.29501 3.48421L5.69478 0L4.09454 3.48947L0 3.81053L3.10935 6.3L2.17541 10L5.69478 8.03684L9.21415 10L8.2859 6.3L11.3896 3.81053ZM5.69477 7.05263L3.55353 8.24737L4.12301 5.99474L2.23234 4.47895L4.72666 4.27895L5.69477 2.1579L6.66857 4.28421L9.16289 4.48421L7.27222 6L7.8417 8.25264L5.69477 7.05263Z" transform="translate(29.2142 0.648972)" fill="#FF9F1C"/>
+                                 <path fill-rule="evenodd" clip-rule="evenodd" d="M11.3896 3.81053L7.29501 3.48421L5.69478 0L4.09454 3.48947L0 3.81053L3.10935 6.3L2.17541 10L5.69478 8.03684L9.21415 10L8.2859 6.3L11.3896 3.81053ZM5.69477 7.05263L3.55353 8.24737L4.12301 5.99474L2.23234 4.47895L4.72666 4.27895L5.69477 2.1579L6.66857 4.28421L9.16289 4.48421L7.27222 6L7.8417 8.25264L5.69477 7.05263Z" transform="translate(43.0526 0.648972)" fill="#FF9F1C"/>
+                                 <path fill-rule="evenodd" clip-rule="evenodd" d="M11.3896 3.81053L7.29501 3.48421L5.69478 0L4.09454 3.48947L0 3.81053L3.10935 6.3L2.17541 10L5.69478 8.03684L9.21415 10L8.2859 6.3L11.3896 3.81053ZM5.69477 7.05263L3.55353 8.24737L4.12301 5.99474L2.23234 4.47895L4.72666 4.27895L5.69477 2.1579L6.66857 4.28421L9.16289 4.48421L7.27222 6L7.8417 8.25264L5.69477 7.05263Z" transform="translate(57.6597 0.648972)" fill="#FF9F1C"/>
+                                 <path fill-rule="evenodd" clip-rule="evenodd" d="M5.69478 8.03684L9.21415 10L8.28021 6.3L11.3896 3.81053L7.29501 3.48947L5.69478 0L4.09454 3.48947L0 3.81053L3.10935 6.3L2.17541 10L5.69478 8.03684Z" transform="translate(0 0.648987)" fill="#FF9F1C"/>
+                              </svg>
+                           </div>
+                           <div class="preco">
+                              <span class="preco-de"> de R$ 129,58</span> 
+                              <span class="preco-por"> por R$ 399,00</span>
+                              <span class="preco-parcelado">ou 3x de R$ 133,00,79</span>
+                           </div>
+                           <div class="bt-comprar">
+                              <a href="#"><span class="icon-btn-cart"></span> Comprar</a>
+                           </div>
+                        </div>
+                     </div>
+                     <div>
+                        <div class="containerProduto">
+                           <!--div class="flagProd">
+                              </div-->
+                           <div class="fotoProduto">
+                              <img src="img/imgProg.png">
+                           </div>
+                           <div class="nameProd">
+                              <h3>TÊNIS COURO PUMA R698 Q4 V2</h3>
+                           </div>
+                           <div class="qualificacaoProd">
+                              <svg width="70" height="11" viewBox="0 0 70 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                 <path fill-rule="evenodd" clip-rule="evenodd" d="M11.3896 3.81053L7.29501 3.48421L5.69478 0L4.09454 3.48947L0 3.81053L3.10935 6.3L2.17541 10L5.69478 8.03684L9.21415 10L8.2859 6.3L11.3896 3.81053ZM5.69479 7.05263L3.55355 8.24737L4.12303 5.99474L2.23236 4.47895L4.72667 4.27895L5.69479 2.15789L6.66859 4.28421L9.1629 4.48421L7.27224 6L7.84172 8.25263L5.69479 7.05263Z" transform="translate(14.6071 0.648972)" fill="#FF9F1C"/>
+                                 <path fill-rule="evenodd" clip-rule="evenodd" d="M11.3896 3.81053L7.29501 3.48421L5.69478 0L4.09454 3.48947L0 3.81053L3.10935 6.3L2.17541 10L5.69478 8.03684L9.21415 10L8.2859 6.3L11.3896 3.81053ZM5.69477 7.05263L3.55353 8.24737L4.12301 5.99474L2.23234 4.47895L4.72666 4.27895L5.69477 2.1579L6.66857 4.28421L9.16289 4.48421L7.27222 6L7.8417 8.25264L5.69477 7.05263Z" transform="translate(29.2142 0.648972)" fill="#FF9F1C"/>
+                                 <path fill-rule="evenodd" clip-rule="evenodd" d="M11.3896 3.81053L7.29501 3.48421L5.69478 0L4.09454 3.48947L0 3.81053L3.10935 6.3L2.17541 10L5.69478 8.03684L9.21415 10L8.2859 6.3L11.3896 3.81053ZM5.69477 7.05263L3.55353 8.24737L4.12301 5.99474L2.23234 4.47895L4.72666 4.27895L5.69477 2.1579L6.66857 4.28421L9.16289 4.48421L7.27222 6L7.8417 8.25264L5.69477 7.05263Z" transform="translate(43.0526 0.648972)" fill="#FF9F1C"/>
+                                 <path fill-rule="evenodd" clip-rule="evenodd" d="M11.3896 3.81053L7.29501 3.48421L5.69478 0L4.09454 3.48947L0 3.81053L3.10935 6.3L2.17541 10L5.69478 8.03684L9.21415 10L8.2859 6.3L11.3896 3.81053ZM5.69477 7.05263L3.55353 8.24737L4.12301 5.99474L2.23234 4.47895L4.72666 4.27895L5.69477 2.1579L6.66857 4.28421L9.16289 4.48421L7.27222 6L7.8417 8.25264L5.69477 7.05263Z" transform="translate(57.6597 0.648972)" fill="#FF9F1C"/>
+                                 <path fill-rule="evenodd" clip-rule="evenodd" d="M5.69478 8.03684L9.21415 10L8.28021 6.3L11.3896 3.81053L7.29501 3.48947L5.69478 0L4.09454 3.48947L0 3.81053L3.10935 6.3L2.17541 10L5.69478 8.03684Z" transform="translate(0 0.648987)" fill="#FF9F1C"/>
+                              </svg>
+                           </div>
+                           <div class="preco">
+                              <span class="preco-de"> de R$ 129,58</span> 
+                              <span class="preco-por"> por R$ 399,00</span>
+                              <span class="preco-parcelado">ou 3x de R$ 133,00,79</span>
+                           </div>
+                           <div class="bt-comprar">
+                              <a href="#"><span class="icon-btn-cart"></span> Comprar</a>
+                           </div>
+                        </div>
+                     </div>
+                     <div>
+                        <div class="containerProduto">
+                           <div class="flagProd">
+                           </div>
+                           <div class="fotoProduto">
+                              <img src="img/imgProg.png">
+                           </div>
+                           <div class="nameProd">
+                              <h3>TÊNIS COURO PUMA R698 Q4 V2</h3>
+                           </div>
+                           <div class="qualificacaoProd">
+                              <svg width="70" height="11" viewBox="0 0 70 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                 <path fill-rule="evenodd" clip-rule="evenodd" d="M11.3896 3.81053L7.29501 3.48421L5.69478 0L4.09454 3.48947L0 3.81053L3.10935 6.3L2.17541 10L5.69478 8.03684L9.21415 10L8.2859 6.3L11.3896 3.81053ZM5.69479 7.05263L3.55355 8.24737L4.12303 5.99474L2.23236 4.47895L4.72667 4.27895L5.69479 2.15789L6.66859 4.28421L9.1629 4.48421L7.27224 6L7.84172 8.25263L5.69479 7.05263Z" transform="translate(14.6071 0.648972)" fill="#FF9F1C"/>
+                                 <path fill-rule="evenodd" clip-rule="evenodd" d="M11.3896 3.81053L7.29501 3.48421L5.69478 0L4.09454 3.48947L0 3.81053L3.10935 6.3L2.17541 10L5.69478 8.03684L9.21415 10L8.2859 6.3L11.3896 3.81053ZM5.69477 7.05263L3.55353 8.24737L4.12301 5.99474L2.23234 4.47895L4.72666 4.27895L5.69477 2.1579L6.66857 4.28421L9.16289 4.48421L7.27222 6L7.8417 8.25264L5.69477 7.05263Z" transform="translate(29.2142 0.648972)" fill="#FF9F1C"/>
+                                 <path fill-rule="evenodd" clip-rule="evenodd" d="M11.3896 3.81053L7.29501 3.48421L5.69478 0L4.09454 3.48947L0 3.81053L3.10935 6.3L2.17541 10L5.69478 8.03684L9.21415 10L8.2859 6.3L11.3896 3.81053ZM5.69477 7.05263L3.55353 8.24737L4.12301 5.99474L2.23234 4.47895L4.72666 4.27895L5.69477 2.1579L6.66857 4.28421L9.16289 4.48421L7.27222 6L7.8417 8.25264L5.69477 7.05263Z" transform="translate(43.0526 0.648972)" fill="#FF9F1C"/>
+                                 <path fill-rule="evenodd" clip-rule="evenodd" d="M11.3896 3.81053L7.29501 3.48421L5.69478 0L4.09454 3.48947L0 3.81053L3.10935 6.3L2.17541 10L5.69478 8.03684L9.21415 10L8.2859 6.3L11.3896 3.81053ZM5.69477 7.05263L3.55353 8.24737L4.12301 5.99474L2.23234 4.47895L4.72666 4.27895L5.69477 2.1579L6.66857 4.28421L9.16289 4.48421L7.27222 6L7.8417 8.25264L5.69477 7.05263Z" transform="translate(57.6597 0.648972)" fill="#FF9F1C"/>
+                                 <path fill-rule="evenodd" clip-rule="evenodd" d="M5.69478 8.03684L9.21415 10L8.28021 6.3L11.3896 3.81053L7.29501 3.48947L5.69478 0L4.09454 3.48947L0 3.81053L3.10935 6.3L2.17541 10L5.69478 8.03684Z" transform="translate(0 0.648987)" fill="#FF9F1C"/>
+                              </svg>
+                           </div>
+                           <div class="preco">
+                              <span class="preco-de"> de R$ 129,58</span> 
+                              <span class="preco-por"> por R$ 399,00</span>
+                              <span class="preco-parcelado">ou 3x de R$ 133,00,79</span>
+                           </div>
+                           <div class="bt-comprar">
+                              <a href="#"><span class="icon-btn-cart"></span> Comprar</a>
+                           </div>
+                        </div>
+                     </div>
+                     <div>
+                        <div class="containerProduto">
+                           <!-- div class="flagProd">
+                              </div -->
+                           <div class="fotoProduto">
+                              <img src="img/imgProg.png">
+                           </div>
+                           <div class="nameProd">
+                              <h3>TÊNIS COURO PUMA R698 Q4 V2</h3>
+                           </div>
+                           <div class="qualificacaoProd">
+                              <svg width="70" height="11" viewBox="0 0 70 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                 <path fill-rule="evenodd" clip-rule="evenodd" d="M11.3896 3.81053L7.29501 3.48421L5.69478 0L4.09454 3.48947L0 3.81053L3.10935 6.3L2.17541 10L5.69478 8.03684L9.21415 10L8.2859 6.3L11.3896 3.81053ZM5.69479 7.05263L3.55355 8.24737L4.12303 5.99474L2.23236 4.47895L4.72667 4.27895L5.69479 2.15789L6.66859 4.28421L9.1629 4.48421L7.27224 6L7.84172 8.25263L5.69479 7.05263Z" transform="translate(14.6071 0.648972)" fill="#FF9F1C"/>
+                                 <path fill-rule="evenodd" clip-rule="evenodd" d="M11.3896 3.81053L7.29501 3.48421L5.69478 0L4.09454 3.48947L0 3.81053L3.10935 6.3L2.17541 10L5.69478 8.03684L9.21415 10L8.2859 6.3L11.3896 3.81053ZM5.69477 7.05263L3.55353 8.24737L4.12301 5.99474L2.23234 4.47895L4.72666 4.27895L5.69477 2.1579L6.66857 4.28421L9.16289 4.48421L7.27222 6L7.8417 8.25264L5.69477 7.05263Z" transform="translate(29.2142 0.648972)" fill="#FF9F1C"/>
+                                 <path fill-rule="evenodd" clip-rule="evenodd" d="M11.3896 3.81053L7.29501 3.48421L5.69478 0L4.09454 3.48947L0 3.81053L3.10935 6.3L2.17541 10L5.69478 8.03684L9.21415 10L8.2859 6.3L11.3896 3.81053ZM5.69477 7.05263L3.55353 8.24737L4.12301 5.99474L2.23234 4.47895L4.72666 4.27895L5.69477 2.1579L6.66857 4.28421L9.16289 4.48421L7.27222 6L7.8417 8.25264L5.69477 7.05263Z" transform="translate(43.0526 0.648972)" fill="#FF9F1C"/>
+                                 <path fill-rule="evenodd" clip-rule="evenodd" d="M11.3896 3.81053L7.29501 3.48421L5.69478 0L4.09454 3.48947L0 3.81053L3.10935 6.3L2.17541 10L5.69478 8.03684L9.21415 10L8.2859 6.3L11.3896 3.81053ZM5.69477 7.05263L3.55353 8.24737L4.12301 5.99474L2.23234 4.47895L4.72666 4.27895L5.69477 2.1579L6.66857 4.28421L9.16289 4.48421L7.27222 6L7.8417 8.25264L5.69477 7.05263Z" transform="translate(57.6597 0.648972)" fill="#FF9F1C"/>
+                                 <path fill-rule="evenodd" clip-rule="evenodd" d="M5.69478 8.03684L9.21415 10L8.28021 6.3L11.3896 3.81053L7.29501 3.48947L5.69478 0L4.09454 3.48947L0 3.81053L3.10935 6.3L2.17541 10L5.69478 8.03684Z" transform="translate(0 0.648987)" fill="#FF9F1C"/>
+                              </svg>
+                           </div>
+                           <div class="preco">
+                              <span class="preco-de"> de R$ 129,58</span> 
+                              <span class="preco-por"> por R$ 399,00</span>
+                              <span class="preco-parcelado">ou 3x de R$ 133,00,79</span>
+                           </div>
+                           <div class="bt-comprar">
+                              <a href="#"><span class="icon-btn-cart"></span> Comprar</a>
+                           </div>
+                        </div>
+                     </div>
+                     <div>
+                        <div class="containerProduto">
+                           <div class="flagProd">
+                           </div>
+                           <div class="fotoProduto">
+                              <img src="img/imgProg.png">
+                           </div>
+                           <div class="nameProd">
+                              <h3>TÊNIS COURO PUMA R698 Q4 V2</h3>
+                           </div>
+                           <div class="qualificacaoProd">
+                              <svg width="70" height="11" viewBox="0 0 70 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                 <path fill-rule="evenodd" clip-rule="evenodd" d="M11.3896 3.81053L7.29501 3.48421L5.69478 0L4.09454 3.48947L0 3.81053L3.10935 6.3L2.17541 10L5.69478 8.03684L9.21415 10L8.2859 6.3L11.3896 3.81053ZM5.69479 7.05263L3.55355 8.24737L4.12303 5.99474L2.23236 4.47895L4.72667 4.27895L5.69479 2.15789L6.66859 4.28421L9.1629 4.48421L7.27224 6L7.84172 8.25263L5.69479 7.05263Z" transform="translate(14.6071 0.648972)" fill="#FF9F1C"/>
+                                 <path fill-rule="evenodd" clip-rule="evenodd" d="M11.3896 3.81053L7.29501 3.48421L5.69478 0L4.09454 3.48947L0 3.81053L3.10935 6.3L2.17541 10L5.69478 8.03684L9.21415 10L8.2859 6.3L11.3896 3.81053ZM5.69477 7.05263L3.55353 8.24737L4.12301 5.99474L2.23234 4.47895L4.72666 4.27895L5.69477 2.1579L6.66857 4.28421L9.16289 4.48421L7.27222 6L7.8417 8.25264L5.69477 7.05263Z" transform="translate(29.2142 0.648972)" fill="#FF9F1C"/>
+                                 <path fill-rule="evenodd" clip-rule="evenodd" d="M11.3896 3.81053L7.29501 3.48421L5.69478 0L4.09454 3.48947L0 3.81053L3.10935 6.3L2.17541 10L5.69478 8.03684L9.21415 10L8.2859 6.3L11.3896 3.81053ZM5.69477 7.05263L3.55353 8.24737L4.12301 5.99474L2.23234 4.47895L4.72666 4.27895L5.69477 2.1579L6.66857 4.28421L9.16289 4.48421L7.27222 6L7.8417 8.25264L5.69477 7.05263Z" transform="translate(43.0526 0.648972)" fill="#FF9F1C"/>
+                                 <path fill-rule="evenodd" clip-rule="evenodd" d="M11.3896 3.81053L7.29501 3.48421L5.69478 0L4.09454 3.48947L0 3.81053L3.10935 6.3L2.17541 10L5.69478 8.03684L9.21415 10L8.2859 6.3L11.3896 3.81053ZM5.69477 7.05263L3.55353 8.24737L4.12301 5.99474L2.23234 4.47895L4.72666 4.27895L5.69477 2.1579L6.66857 4.28421L9.16289 4.48421L7.27222 6L7.8417 8.25264L5.69477 7.05263Z" transform="translate(57.6597 0.648972)" fill="#FF9F1C"/>
+                                 <path fill-rule="evenodd" clip-rule="evenodd" d="M5.69478 8.03684L9.21415 10L8.28021 6.3L11.3896 3.81053L7.29501 3.48947L5.69478 0L4.09454 3.48947L0 3.81053L3.10935 6.3L2.17541 10L5.69478 8.03684Z" transform="translate(0 0.648987)" fill="#FF9F1C"/>
+                              </svg>
+                           </div>
+                           <div class="preco">
+                              <span class="preco-de"> de R$ 129,58</span> 
+                              <span class="preco-por"> por R$ 399,00</span>
+                              <span class="preco-parcelado">ou 3x de R$ 133,00,79</span>
+                           </div>
+                           <div class="bt-comprar">
+                              <a href="#"><span class="icon-btn-cart"></span> Comprar</a>
+                           </div>
+                        </div>
+                     </div>
+                     <div>
+                        <div class="containerProduto">
+                           <!-- div class="flagProd">
+                              </div -->
+                           <div class="fotoProduto">
+                              <img src="img/imgProg.png">
+                           </div>
+                           <div class="nameProd">
+                              <h3>TÊNIS COURO PUMA R698 Q4 V2</h3>
+                           </div>
+                           <div class="qualificacaoProd">
+                              <svg width="70" height="11" viewBox="0 0 70 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                 <path fill-rule="evenodd" clip-rule="evenodd" d="M11.3896 3.81053L7.29501 3.48421L5.69478 0L4.09454 3.48947L0 3.81053L3.10935 6.3L2.17541 10L5.69478 8.03684L9.21415 10L8.2859 6.3L11.3896 3.81053ZM5.69479 7.05263L3.55355 8.24737L4.12303 5.99474L2.23236 4.47895L4.72667 4.27895L5.69479 2.15789L6.66859 4.28421L9.1629 4.48421L7.27224 6L7.84172 8.25263L5.69479 7.05263Z" transform="translate(14.6071 0.648972)" fill="#FF9F1C"/>
+                                 <path fill-rule="evenodd" clip-rule="evenodd" d="M11.3896 3.81053L7.29501 3.48421L5.69478 0L4.09454 3.48947L0 3.81053L3.10935 6.3L2.17541 10L5.69478 8.03684L9.21415 10L8.2859 6.3L11.3896 3.81053ZM5.69477 7.05263L3.55353 8.24737L4.12301 5.99474L2.23234 4.47895L4.72666 4.27895L5.69477 2.1579L6.66857 4.28421L9.16289 4.48421L7.27222 6L7.8417 8.25264L5.69477 7.05263Z" transform="translate(29.2142 0.648972)" fill="#FF9F1C"/>
+                                 <path fill-rule="evenodd" clip-rule="evenodd" d="M11.3896 3.81053L7.29501 3.48421L5.69478 0L4.09454 3.48947L0 3.81053L3.10935 6.3L2.17541 10L5.69478 8.03684L9.21415 10L8.2859 6.3L11.3896 3.81053ZM5.69477 7.05263L3.55353 8.24737L4.12301 5.99474L2.23234 4.47895L4.72666 4.27895L5.69477 2.1579L6.66857 4.28421L9.16289 4.48421L7.27222 6L7.8417 8.25264L5.69477 7.05263Z" transform="translate(43.0526 0.648972)" fill="#FF9F1C"/>
+                                 <path fill-rule="evenodd" clip-rule="evenodd" d="M11.3896 3.81053L7.29501 3.48421L5.69478 0L4.09454 3.48947L0 3.81053L3.10935 6.3L2.17541 10L5.69478 8.03684L9.21415 10L8.2859 6.3L11.3896 3.81053ZM5.69477 7.05263L3.55353 8.24737L4.12301 5.99474L2.23234 4.47895L4.72666 4.27895L5.69477 2.1579L6.66857 4.28421L9.16289 4.48421L7.27222 6L7.8417 8.25264L5.69477 7.05263Z" transform="translate(57.6597 0.648972)" fill="#FF9F1C"/>
+                                 <path fill-rule="evenodd" clip-rule="evenodd" d="M5.69478 8.03684L9.21415 10L8.28021 6.3L11.3896 3.81053L7.29501 3.48947L5.69478 0L4.09454 3.48947L0 3.81053L3.10935 6.3L2.17541 10L5.69478 8.03684Z" transform="translate(0 0.648987)" fill="#FF9F1C"/>
+                              </svg>
+                           </div>
+                           <div class="preco">
+                              <span class="preco-de"> de R$ 129,58</span> 
+                              <span class="preco-por"> por R$ 399,00</span>
+                              <span class="preco-parcelado">ou 3x de R$ 133,00,79</span>
+                           </div>
+                           <div class="bt-comprar">
+                              <a href="#"><span class="icon-btn-cart"></span> Comprar</a>
+                           </div>
+                        </div>
+                     </div>
+                     <div>
+                        <div class="containerProduto">
+                           <div class="flagProd">
+                           </div>
+                           <div class="fotoProduto">
+                              <img src="img/imgProg.png">
+                           </div>
+                           <div class="nameProd">
+                              <h3>TÊNIS COURO PUMA R698 Q4 V2</h3>
+                           </div>
+                           <div class="qualificacaoProd">
+                              <svg width="70" height="11" viewBox="0 0 70 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                 <path fill-rule="evenodd" clip-rule="evenodd" d="M11.3896 3.81053L7.29501 3.48421L5.69478 0L4.09454 3.48947L0 3.81053L3.10935 6.3L2.17541 10L5.69478 8.03684L9.21415 10L8.2859 6.3L11.3896 3.81053ZM5.69479 7.05263L3.55355 8.24737L4.12303 5.99474L2.23236 4.47895L4.72667 4.27895L5.69479 2.15789L6.66859 4.28421L9.1629 4.48421L7.27224 6L7.84172 8.25263L5.69479 7.05263Z" transform="translate(14.6071 0.648972)" fill="#FF9F1C"/>
+                                 <path fill-rule="evenodd" clip-rule="evenodd" d="M11.3896 3.81053L7.29501 3.48421L5.69478 0L4.09454 3.48947L0 3.81053L3.10935 6.3L2.17541 10L5.69478 8.03684L9.21415 10L8.2859 6.3L11.3896 3.81053ZM5.69477 7.05263L3.55353 8.24737L4.12301 5.99474L2.23234 4.47895L4.72666 4.27895L5.69477 2.1579L6.66857 4.28421L9.16289 4.48421L7.27222 6L7.8417 8.25264L5.69477 7.05263Z" transform="translate(29.2142 0.648972)" fill="#FF9F1C"/>
+                                 <path fill-rule="evenodd" clip-rule="evenodd" d="M11.3896 3.81053L7.29501 3.48421L5.69478 0L4.09454 3.48947L0 3.81053L3.10935 6.3L2.17541 10L5.69478 8.03684L9.21415 10L8.2859 6.3L11.3896 3.81053ZM5.69477 7.05263L3.55353 8.24737L4.12301 5.99474L2.23234 4.47895L4.72666 4.27895L5.69477 2.1579L6.66857 4.28421L9.16289 4.48421L7.27222 6L7.8417 8.25264L5.69477 7.05263Z" transform="translate(43.0526 0.648972)" fill="#FF9F1C"/>
+                                 <path fill-rule="evenodd" clip-rule="evenodd" d="M11.3896 3.81053L7.29501 3.48421L5.69478 0L4.09454 3.48947L0 3.81053L3.10935 6.3L2.17541 10L5.69478 8.03684L9.21415 10L8.2859 6.3L11.3896 3.81053ZM5.69477 7.05263L3.55353 8.24737L4.12301 5.99474L2.23234 4.47895L4.72666 4.27895L5.69477 2.1579L6.66857 4.28421L9.16289 4.48421L7.27222 6L7.8417 8.25264L5.69477 7.05263Z" transform="translate(57.6597 0.648972)" fill="#FF9F1C"/>
+                                 <path fill-rule="evenodd" clip-rule="evenodd" d="M5.69478 8.03684L9.21415 10L8.28021 6.3L11.3896 3.81053L7.29501 3.48947L5.69478 0L4.09454 3.48947L0 3.81053L3.10935 6.3L2.17541 10L5.69478 8.03684Z" transform="translate(0 0.648987)" fill="#FF9F1C"/>
+                              </svg>
+                           </div>
+                           <div class="preco">
+                              <span class="preco-de"> de R$ 129,58</span> 
+                              <span class="preco-por"> por R$ 399,00</span>
+                              <span class="preco-parcelado">ou 3x de R$ 133,00,79</span>
+                           </div>
+                           <div class="bt-comprar">
+                              <a href="#"><span class="icon-btn-cart"></span> Comprar</a>
+                           </div>
+                        </div>
+                     </div>
+                  </section>
+               </div>
+            </div>
+         </div>
+         </div>
+      </article>
+      <footer>
+         <div class="container">
+         <div class="row">
+            <div class="col-ms-12 col-lg-12"  >
+               <h2>Localização</h2>
+            </div>
+         </div>
+         <div class="row">
+         <div class="col-12 col-lg-5 col-sm-12 col-md-12">
+            <div class="row">
+               <div class="col-sm-6   col-md-6 enderecos">
+                  <!-- Grid column -->
+                  <!-- Contact details -->
+                  <h5 class="font-weight-bold ">São Paulo</h5>
+                  <ul class="list-unstyled">
+                     <li> Rua do Rócio, 423/1801</li>
+                     <li>Vila Olímpia - SP</li>
+                     <li> 04552-000</li>
+                     <li>+55 11  3333 3333</li>
+                  </ul>
+               </div>
+               <div class=" col-6 col-sm-6   col-md-6 enderecos">
+                  <!-- Grid column -->
+                  <!-- Contact details -->
+                  <h5 class="font-weight-bold ">  Rio de Janeiro</h5>
+                  <ul class="list-unstyled">
+                     <li> Vol. da Pátria, 301/702</li>
+                     <li> Botafogo - RJ</li>
+                     <li> 22270-000</li>
+                     <li>55 21  3333 3333</li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+         <div class="col-12 col-md-12 col-sm-12  col-lg-4 btnsInfo" >
+            <div class="row">
+               <div class="col-12 col-lg-12 bt-email">
+                  <a href="#" title="Fale em contato">
+                     <i class="fa fa fa-envelope  pr-2" aria-hidden="true"></i>
+                     <div class="textbt"> Fale em contato</div>
+                  </a>
+               </div>
+               <div class="col-12 col-sm-6 col-lg-12 bt-contato">
+                  <a href="#" title="Fale com o nosso Consultor Online">
+                     <span class="sprite-icon-btn-cart"></span>
+                     <div class="textbt"> Fale com o nosso consultor online</div>
+                  </a>
+               </div>
+            </div>
+         </div>
+         <div class="col-12 col-lg-3 col-sm-12 col-md-12">
+            <div class="direitos">
+               <div class="row">
+                  <div class="col-6 col-md-6">
+                     <div class="direitosProfute">
+                        <a href="https://www.profite.com.br/"  title="Profite">
+                           <span>Created by</span>
+                           <svg width="65" height="18" viewBox="0 0 65 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path fill-rule="evenodd" clip-rule="evenodd" d="M45.2744 11.541H47.0794V14.2693H44.6298C43.8347 14.2693 43.1686 14.1177 42.6314 13.8146C42.0942 13.5114 41.7075 13.1217 41.4496 12.6237C41.1918 12.1473 41.0628 11.6493 41.0628 11.1296V6.56084V4.07075V1.88381L44.5653 0.952729V5.02348H47.1008V7.51357H44.5868V10.9131C44.5653 11.3245 44.8017 11.541 45.2744 11.541ZM36.1207 5.00183H39.6232V14.2693H36.1207V5.00183ZM36.0777 0H39.6017V2.70662H36.0777V0ZM31.9951 14.2693H28.4926V6.56084V4.07075V3.13968C28.4926 2.62 28.6215 2.12199 28.8794 1.64562C29.1372 1.16926 29.524 0.757852 30.0612 0.454711C30.5984 0.15157 31.2645 0 32.0595 0H34.6165V2.72827H32.7041C32.2314 2.72827 31.9951 2.9448 31.9951 3.37786V5.00183H34.6165V7.49191H31.9951V14.2693ZM26.1504 13.0351C25.2265 13.9445 23.9802 14.3992 22.4546 14.3992C20.9074 14.3992 19.6612 13.9445 18.7587 13.0351C18.4364 12.7319 18.2 12.3855 18.0066 12.0174C17.8132 11.6493 17.6843 11.2379 17.6198 10.7615C17.5339 10.2851 17.5124 9.70051 17.5124 8.96431C17.5124 8.24977 17.5554 7.64349 17.6198 7.16712C17.7058 6.69076 17.8347 6.27935 18.0066 5.91125C18.2 5.54315 18.4364 5.1967 18.7587 4.89356C19.167 4.50381 19.6612 4.17902 20.2628 3.91918C20.8645 3.65934 21.5951 3.52943 22.4546 3.52943C23.3141 3.52943 24.0231 3.65934 24.6463 3.91918C25.2479 4.17902 25.7636 4.50381 26.1719 4.89356C26.6446 5.36993 26.967 5.91125 27.1603 6.49588C27.3322 7.10216 27.4397 7.90332 27.4397 8.94266C27.4397 9.982 27.3537 10.8048 27.1603 11.4111C26.967 12.0174 26.6232 12.5587 26.1504 13.0351ZM23.8083 7.53522C23.7438 7.18877 23.6149 6.95059 23.4 6.75572C23.1851 6.56084 22.8843 6.45257 22.4546 6.45257C22.0463 6.45257 21.724 6.56084 21.5091 6.75572C21.2942 6.95059 21.1653 7.23208 21.1008 7.57853C21.0364 7.92497 20.9934 8.40134 20.9934 8.96431C20.9934 9.52729 21.0364 9.982 21.1008 10.3285C21.1653 10.6749 21.2942 10.9564 21.5091 11.1513C21.724 11.3461 22.0463 11.4544 22.4546 11.4544C22.8628 11.4544 23.1851 11.3461 23.4 11.1513C23.6149 10.9564 23.7438 10.6965 23.8083 10.3718C23.8727 10.047 23.9157 9.5706 23.9157 8.94266C23.8942 8.33638 23.8727 7.86002 23.8083 7.53522ZM15.0198 6.27935C14.5471 6.27935 14.3107 6.49588 14.3107 6.92894V14.2693H10.8083V7.62183V6.69076C10.8083 6.17109 10.9372 5.67307 11.195 5.1967C11.4529 4.72034 11.8397 4.30893 12.3769 4.00579C12.9141 3.70265 13.5802 3.55108 14.3752 3.55108H17.4694L16.7818 6.27935H15.0198ZM8.8529 12.667C7.60661 14.0528 5.56529 14.3775 3.50248 14.2476V17.907H0C0 17.907 0 4.24398 0 3.57273C2.85785 3.55108 5.00661 3.55108 6.05951 3.55108C7.21984 3.55108 8.1438 3.87588 8.8529 4.50381C9.30414 4.93687 9.60496 5.45654 9.73389 6.10613C9.86281 6.75572 9.92728 7.53522 9.92728 8.48795V8.98597V9.48398C9.92728 10.4367 9.86281 10.48 9.73389 11.108C9.60496 11.7142 9.26116 12.2123 8.8529 12.667ZM5.3719 6.10613C4.92066 6.10613 4.1686 6.12778 3.69587 6.12778L3.48099 6.21439V11.6709C3.48099 11.6709 3.8248 11.6926 4.83471 11.6926C5.56529 11.6926 6.05951 11.3028 6.31736 10.8698C6.57521 10.4367 6.72562 9.63556 6.72562 8.59622C6.72562 6.86398 6.44628 6.10613 5.3719 6.10613Z" transform="translate(0 0.0930176)" fill="white"/>
+                              <path d="M4.61983 6.36597C4.87768 6.2144 5.19999 6.12779 5.58677 6.12779C5.97355 6.12779 6.29586 6.2144 6.55372 6.36597C6.81157 6.51754 7.00495 6.71242 7.11239 6.9506C7.24132 7.18878 7.30578 7.47027 7.30578 7.77341H3.88925C3.88925 7.44862 3.95372 7.18878 4.08264 6.9506C4.19008 6.73407 4.36198 6.51754 4.61983 6.36597Z" transform="translate(48.4976 0.0930176)" fill="white"/>
+                              <path d="M15.6645 10.6099L10.4645 15.8933C10.2066 16.1314 9.86282 16.283 9.49753 16.283C9.13224 16.283 8.78843 16.1314 8.55206 15.8933L6.96199 14.2909C7.54216 14.226 8.03637 14.1177 8.46612 13.9445C9.11075 13.6847 9.75538 13.2516 10.4 12.667L8.29422 10.7399C7.95042 11.043 7.6281 11.2595 7.30579 11.4111C6.98348 11.541 6.51075 11.6276 5.93059 11.6276C5.30745 11.6276 4.81323 11.4761 4.44794 11.1513C4.08265 10.8265 3.91075 10.4367 3.91075 9.982H10.7868V8.53126C10.7868 7.57853 10.5934 6.71241 10.1851 5.95456C9.77686 5.1967 9.1967 4.59042 8.40166 4.15736C7.62811 3.70265 6.68265 3.48612 5.60827 3.48612C4.08265 3.48612 2.83636 3.96249 1.89091 4.91522C1.18181 5.62976 0.752069 6.53919 0.55868 7.66514C0.214878 7.12382 0 6.40927 0 5.84629V1.38579C0 0.627935 0.623138 0 1.35372 0H5.75868C6.51075 0 7.54215 0.433059 8.07934 0.974382L15.6645 8.63952C15.9008 8.89936 16.0513 9.2458 16.0513 9.6139C16.0513 10.0037 15.9008 10.3501 15.6645 10.6099Z" transform="translate(48.4976 0.0930176)" fill="white"/>
+                              <path d="M15.6645 10.6099L10.4645 15.8933C10.2066 16.1314 9.86282 16.283 9.49753 16.283C9.13224 16.283 8.78843 16.1314 8.55206 15.8933L6.96199 14.2909C7.54216 14.226 8.03637 14.1177 8.46612 13.9445C9.11075 13.6847 9.75538 13.2516 10.4 12.667L8.29422 10.7399C7.95042 11.043 7.6281 11.2595 7.30579 11.4111C6.98348 11.541 6.51075 11.6276 5.93059 11.6276C5.30745 11.6276 4.81323 11.4761 4.44794 11.1513C4.08265 10.8265 3.91075 10.4367 3.91075 9.982H10.7868V8.53126C10.7868 7.57853 10.5934 6.71241 10.1851 5.95456C9.77686 5.1967 9.1967 4.59042 8.40166 4.15736C7.62811 3.70265 6.68265 3.48612 5.60827 3.48612C4.08265 3.48612 2.83636 3.96249 1.89091 4.91522C1.18181 5.62976 0.752069 6.53919 0.55868 7.66514C0.214878 7.12382 0 6.40927 0 5.84629V1.38579C0 0.627935 0.623138 0 1.35372 0H5.75868C6.51075 0 7.54215 0.433059 8.07934 0.974382L15.6645 8.63952C15.9008 8.89936 16.0513 9.2458 16.0513 9.6139C16.0513 10.0037 15.9008 10.3501 15.6645 10.6099Z" transform="translate(48.4976 0.0930176)" fill="white"/>
+                           </svg>
+                        </a>
+                     </div>
+                  </div>
+                  <div class=" col-6 col-md-6">
+                     <div class="direitosProfute">
+                        <a href="http://www.vtex.com/pt-br/"  title="Vtex">
+                           <span>Powered By</span>
+                           <svg width="54" height="19" viewBox="0 0 54 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M37.7959 7.00966H35.9252V13.4038C35.9252 13.5235 35.8222 13.6261 35.7021 13.6261H34.2605C34.1403 13.6261 34.0374 13.5235 34.0374 13.4038V7.00966H32.1495C32.098 7.00966 32.0294 6.99256 31.9951 6.95837C31.9607 6.92418 31.9264 6.87289 31.9264 6.8045V5.67612C31.9264 5.62483 31.9436 5.55644 31.9951 5.52224C32.0294 5.48805 32.098 5.45386 32.1495 5.47095H37.7959C37.916 5.47095 38.019 5.55644 38.019 5.67612V6.8045C38.019 6.92418 37.916 7.00966 37.7959 7.00966Z" transform="translate(0.804871 0.279068)" fill="white"/>
+                              <path d="M43.8027 13.5748C43.0647 13.6774 42.3096 13.7287 41.5716 13.7116C40.1471 13.7116 38.8943 13.3526 38.8943 11.3522V7.71064C38.8943 5.71032 40.1643 5.36839 41.5888 5.36839C42.3267 5.35129 43.0647 5.40258 43.8027 5.50516C43.9571 5.52226 44.0258 5.59064 44.0258 5.72742V6.75322C44.0258 6.8729 43.9228 6.97548 43.8027 6.97548H41.4858C40.9709 6.97548 40.7821 7.14645 40.7821 7.72774V8.71935H43.7169C43.837 8.71935 43.94 8.82193 43.94 8.9416V9.98451C43.94 10.1042 43.837 10.2068 43.7169 10.2068H40.7821V11.3693C40.7821 11.9335 40.9709 12.1216 41.4858 12.1216H43.8027C43.9228 12.1216 44.0258 12.2242 44.0258 12.3439V13.3697C44.0258 13.4893 43.9571 13.5577 43.8027 13.5748Z" transform="translate(0.804871 0.279068)" fill="white"/>
+                              <path d="M52.1092 13.6261H50.3587C50.2385 13.6432 50.1184 13.5748 50.0669 13.4551L48.5395 11.0616L47.1665 13.4039C47.0979 13.5406 47.012 13.6261 46.8919 13.6261H45.2615C45.2272 13.6261 45.1757 13.6261 45.1414 13.5919C45.107 13.5577 45.0899 13.5235 45.0899 13.4722C45.0899 13.438 45.107 13.4209 45.107 13.4039L47.4926 9.43741L45.0727 5.67613C45.0555 5.65903 45.0555 5.62484 45.0555 5.60774C45.0555 5.52225 45.1414 5.45387 45.2272 5.47096H47.0292C47.1493 5.47096 47.2351 5.57354 47.3038 5.67613L48.7111 7.8987L50.0841 5.67613C50.1356 5.55645 50.2385 5.48806 50.3587 5.47096H51.9891C52.0749 5.47096 52.1607 5.52225 52.1607 5.60774C52.1607 5.62484 52.1436 5.65903 52.1436 5.67613L49.7408 9.4716L52.2465 13.4039C52.2637 13.438 52.2809 13.4722 52.2809 13.5064C52.2637 13.5748 52.2122 13.6261 52.1092 13.6261Z" transform="translate(0.804871 0.279068)" fill="white"/>
+                              <path d="M29.2834 5.48807C29.1976 5.48807 29.1289 5.53936 29.1118 5.62484L27.5157 11.5232C27.4985 11.6429 27.4642 11.6942 27.3612 11.6942C27.2583 11.6942 27.2239 11.6429 27.2068 11.5232L25.6107 5.62484C25.5935 5.53936 25.5249 5.48807 25.4391 5.48807H23.8601C23.8086 5.48807 23.7572 5.50517 23.7228 5.55646C23.6885 5.59065 23.6713 5.64194 23.6885 5.69323C23.6885 5.69323 25.645 12.4635 25.6622 12.5319C25.9196 13.3355 26.5546 13.7287 27.3612 13.7287C28.1335 13.7629 28.8372 13.2671 29.0603 12.5319C29.0946 12.4464 30.9996 5.69323 30.9996 5.69323C31.0168 5.64194 30.9996 5.59065 30.9653 5.55646C30.931 5.52226 30.8795 5.48807 30.828 5.48807H29.2834Z" transform="translate(0.804871 0.279068)" fill="white"/>
+                              <path d="M20.359 0H3.93474C3.33406 0 2.78487 0.324838 2.49311 0.820643C2.18419 1.33355 2.16703 1.96613 2.44163 2.47903L4.0892 5.59063H1.10297C0.725399 5.59063 0.364991 5.7787 0.159044 6.10354C-0.0469032 6.42837 -0.0469034 6.8387 0.124719 7.18063L5.4107 17.1309C5.59948 17.49 5.97705 17.7122 6.37179 17.7122C6.76652 17.7122 7.14409 17.49 7.33287 17.1309L8.7745 14.4296L10.5765 17.8319C10.8683 18.379 11.4518 18.7209 12.0697 18.7209C12.6875 18.7209 13.271 18.379 13.5628 17.8319L21.8007 2.39354C22.0753 1.88064 22.0581 1.26516 21.7492 0.78645C21.4746 0.290644 20.9426 0 20.359 0ZM13.0136 6.51386L9.40951 13.25C9.28937 13.4893 9.0491 13.6261 8.7745 13.6261C8.49991 13.6261 8.25963 13.4722 8.1395 13.25L4.58691 6.58224C4.48394 6.37708 4.48393 6.13773 4.60407 5.93257C4.72421 5.72741 4.94732 5.60773 5.17043 5.60773H12.4472C12.6703 5.60773 12.8763 5.71031 12.9793 5.89838C13.1166 6.08644 13.1166 6.32579 13.0136 6.51386Z" transform="translate(0.804871 0.279068)" fill="white"/>
+                           </svg>
+                        </a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </footer>
+      <!-- SCRIPTS -->
+      <!-- JQuery -->
+      <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+      <!-- Bootstrap tooltips -->
+      <script type="text/javascript" src="js/popper.min.js"></script>
+      <!-- Bootstrap core JavaScript -->
+      <script type="text/javascript" src="js/bootstrap.min.js"></script>
+      <!-- Slide slick JavaScript -->
+      <script type="text/javascript" src='js/slick.min.js'></script>
+      <!-- MDB core JavaScript -->
+      <script type="text/javascript" src="js/mdb.min.js"></script>
+   </body>
+</html>
